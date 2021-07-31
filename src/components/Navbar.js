@@ -12,7 +12,7 @@ const Navbar = ({ navbarLinks }) => {
 
   return (
     <nav className="navbar">
-      <span className="navbar__logo">travello</span>
+      <span className="navbar__logo">travell</span>
       {menuClicked ? (
         <FiX size={25} className={"navbar__menu"} onClick={toggleMenuClick} />
       ) : (
