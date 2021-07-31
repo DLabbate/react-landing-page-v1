@@ -6,16 +6,10 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Slider from "./components/Slider";
 
-const navbarLinks = [
-  { url: "#", title: "Home" },
-  { url: "#", title: "Trips" },
-  { url: "#", title: "Rewards" },
-];
-
 function App() {
   return (
     <div className="App">
-      <Navbar navbarLinks={navbarLinks} />
+      <Navbar />
       <Hero imageSrc={travel_01} />
       <Slider
         imageSrc={travel_02}
@@ -26,7 +20,7 @@ function App() {
         imageSrc={travel_03}
         title={"Memories for a lifetime."}
         subtitle={"Your dream vacation is only a few clicks away."}
-        flipped
+        flipped={true}
       />
     </div>
   );

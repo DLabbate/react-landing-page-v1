@@ -1,7 +1,13 @@
 import React from "react";
 import "./Navbar.css";
 
-const Navbar = ({ navbarLinks }) => {
+const Navbar = () => {
+  const navbarLinks = [
+    { url: "#", title: "Home" },
+    { url: "#", title: "Trips" },
+    { url: "#", title: "Rewards" },
+  ];
+
   return (
     <nav className="navbar">
       <span className="navbar__logo">travello</span>
