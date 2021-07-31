@@ -2,6 +2,16 @@
   display: flex;
   align-items: center;
   margin: 20px;
+
+  opacity: 0;
+  transform: scale(85%);
+  transition: 2s;
+}
+
+.slider--zoom {
+  opacity: 1;
+  transform: scale(100%);
+  transition: 2s;
 }
 
 .slider__image {
