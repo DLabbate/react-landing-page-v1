@@ -31,3 +31,14 @@
 .slider__title {
   text-align: center;
 }
+
+@media screen and (max-width: 800px) {
+  .slider {
+    flex-direction: column;
+    background-color: rgb(236, 236, 236);
+  }
+
+  .slider__image {
+    width: 100%;
+  }
+}
