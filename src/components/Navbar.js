@@ -1,11 +1,6 @@
 import React from "react";
 import "./Navbar.css";
 
-const navbarLinks = [
-  { url: "#", title: "Home" },
-  { url: "#", title: "Browse" },
-];
-
 const Navbar = ({ navbarLinks }) => {
   return (
     <nav className="navbar">
