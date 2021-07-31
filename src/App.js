@@ -7,14 +7,22 @@ import Navbar from "./components/Navbar";
 import Slider from "./components/Slider";
 
 function App() {
+  const navbarLinks = [
+    { url: "#", title: "Home" },
+    { url: "#", title: "Trips" },
+    { url: "#", title: "Rewards" },
+  ];
+
   return (
     <div className="App">
-      <Navbar />
+      <Navbar navbarLinks={navbarLinks} />
       <Hero imageSrc={travel_01} />
       <Slider
         imageSrc={travel_02}
         title={"Be an explorer."}
-        subtitle={"Our platform offers a plethora of unique travel locations!"}
+        subtitle={
+          "Our platform offers a wide variety of unique travel locations!"
+        }
       />
       <Slider
         imageSrc={travel_03}

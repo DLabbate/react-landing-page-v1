@@ -2,18 +2,13 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { FiMenu, FiX } from "react-icons/fi";
 
-const Navbar = () => {
+const Navbar = ({ navbarLinks }) => {
+  // Determines if the "menu icon" was clicked or not. Note that this icon is only visible when the window width is small.
   const [menuClicked, setMenuClicked] = useState(false);
 
   const toggleMenuClick = () => {
     setMenuClicked(!menuClicked);
   };
-
-  const navbarLinks = [
-    { url: "#", title: "Home" },
-    { url: "#", title: "Trips" },
-    { url: "#", title: "Rewards" },
-  ];
 
   return (
     <nav className="navbar">
