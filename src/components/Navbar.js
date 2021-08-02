@@ -14,17 +14,17 @@ const Navbar = ({ navbarLinks }) => {
     <nav className="navbar">
       <span className="navbar__logo">travell</span>
       {menuClicked ? (
+        <FiX size={25} className={"navbar__menu"} onClick={toggleMenuClick} />
+      ) : (
         <FiMenu
           size={25}
           className={"navbar__menu"}
           onClick={toggleMenuClick}
         />
-      ) : (
-        <FiX size={25} className={"navbar__menu"} onClick={toggleMenuClick} />
       )}
       <ul
         className={
-          menuClicked ? "navbar__list" : "navbar__list navbar__list--active"
+          menuClicked ? "navbar__list navbar__list--active" : "navbar__list"
         }
       >
         {navbarLinks.map((item, index) => {
